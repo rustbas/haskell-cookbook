@@ -3,7 +3,6 @@ module Main (main) where
 import Data.Functor
 
 data Tree a = Leaf | Node (Tree a) a (Tree a) deriving (Show, Eq)
-
 node :: Tree a -> a -> Tree a -> Tree a
 node l x r = Node  l x r
 
